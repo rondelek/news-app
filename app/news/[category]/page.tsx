@@ -10,7 +10,10 @@ export default async function NewsCategory({ params: { category } }: Props) {
   const news: NewsResponse = await fetchNews(category);
   return (
     <div>
-      <h1 className="underline decoration-blue-500"> {category}</h1>
+      <h1 className="dark:text-slate-100 underline decoration-blue-500">
+        {" "}
+        {category}
+      </h1>
       <NewsList news={news} />
     </div>
   );
