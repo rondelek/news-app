@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .navlink {
+    @apply my-1 rounded-full lg:h-[110px] lg:w-[110px]  md:h-[90px] md:w-[90px] sm:h-[80px] sm:w-[80px] h-[70px] w-[70px]  flex justify-center items-center text-slate-200 md:text-base text-[0.8rem] lg:text-base;
+  }
+}
