@@ -25,7 +25,7 @@ export default function Article({ article }: Props) {
     >
       {article.image && (
         <div>
-          <div className="bg-gray-100">
+          <div className="bg-gray-100 dark:bg-zinc-900">
             <img
               src={article.image}
               alt={article.title}
