@@ -25,12 +25,15 @@ export default function Article({ article }: Props) {
     >
       {article.image && (
         <div>
-          <div className="bg-gray-100 dark:bg-zinc-900">
+          <div className="bg-gray-100 dark:bg-zinc-900 relative">
             <img
               src={article.image}
               alt={article.title}
               className="h-50 w-full object-cover rounded-t-2xl shadow-md"
             />
+            <button className="absolute top-5 left-5  bg-blue-700 hover:bg-blue-600 text-slate-200 text-sm hover:text-white rounded-full py-1 px-4 duration-200">
+              {article.category}
+            </button>
           </div>
           <div className="shadow-sm hover:shadow-lg  flex-1 flex flex-col bg-white rounded-b-2xl">
             <div className="flex-1 flex flex-col p-5">

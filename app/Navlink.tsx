@@ -8,7 +8,7 @@ type Props = {
 
 export default function Navlink({ category, isActive }: Props) {
   return (
-    <Link href={`/news/${category}`} className="navlink relative">
+    <Link href={`/news/${category}`} className="navlink relative my-2">
       <img
         className="w-full h-full rounded-full absolute"
         src={`/${category}.jpg`}
